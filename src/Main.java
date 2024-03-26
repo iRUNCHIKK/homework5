@@ -30,12 +30,17 @@ public class Main {
 
         //task3
         System.out.println("Task 3");
-        int year = 2024;
-        if (year/4==0 && year/400==0 && year/100!=0 && year>1584){
-            System.out.println(year + " год является високосным");
+        int year = 200;
+        if (year>1584){
+            if ((year % 4 ==0 && year % 100 !=0) || (year % 400 ==0)) {
+                System.out.println(year + " год является високосным");
+            }
+            else {
+                System.out.println(year + " год не является високосным");
+            }
         }
         else {
-            System.out.println(year + " год не является високосным");
+            System.out.println(year + " год слишком маленький, попробуйте ввести другой");
         }
 
         //task4
